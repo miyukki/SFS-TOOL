@@ -1,0 +1,309 @@
+body {
+  width: 100% !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  background: #F0F0F0 url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/nav.png) repeat-x !important;
+}
+
+table, td {
+  background: none !important;
+}
+
+body>table {
+  width:960px !important;
+  margin:0px auto !important;
+}
+
+body.full>table {
+  width: 100% !important;
+  margin:0px !important;
+}
+
+
+body>table:nth-child(1) {
+  padding-top: 40px !important;
+}
+
+body>table:nth-child(2) {
+  background: #F0F0F0 url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/campus-bg.jpg) no-repeat top center !important;
+  width: 100% !important;
+  height: 480px !important;
+}
+body>table:nth-child(2) img {
+  display: none !important;
+}
+
+
+body>table:nth-child(1) h1 a {
+  display: block !important;
+  height: 90px !important;
+  width: 300px !important;
+  margin-top:10px !important;
+  overflow: hidden !important;
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/logo.png) no-repeat !important;
+}
+
+h1 a img {
+  display: none !important;
+}
+
+
+#navigation {
+  margin-top: -170px !important;
+  margin-bottom: 160px !important;
+  margin-left: -40px !important;
+}
+
+.navi01, .rnavi01, 
+.navi02, .rnavi02, 
+.navi03, .rnavi03, 
+.navi04, .rnavi04 {
+  border: none !important;
+  background:none !important;
+}
+
+a[href*="logout.cgi"] {
+  display:block !important;
+  width: 68px !important;
+  height: 52px !important;
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/logout.png) !important;
+}
+
+a[href*="logout.cgi"] img {
+  display:none !important;
+}
+
+body>table:nth-child(3) {
+  background: #FFF !important;
+  border-radius: 4px !important;
+  box-shadow: 0px 1px 6px rgba(0,0,0,0.3) !important;
+  margin-top: -440px !important;
+  padding-bottom: 10px !important;
+}
+
+body.full>table:nth-child(3) {
+  margin-top: 0px !important;
+}
+
+body>table:nth-child(3)>tbody>tr>td:nth-child(3)>table {
+  width:100% !important;
+}
+
+body>table:nth-child(3) #navigation + br {
+  display:none !important;
+}
+
+body>table:nth-child(3) tr[bgcolor="#ffdc8a"] td,
+body>table:nth-child(3) tr[bgcolor="#ffcccc"] td,
+body>table:nth-child(3) tr[bgcolor="#cccc99"] td,
+body>table:nth-child(3) tr[bgcolor="#c8c8ff"] td {
+  border-radius: 4px !important;
+  border: 1px solid #CCC !important;
+}
+
+table[width="850"] {
+  width: 100% !important;
+  margin-top: 18px !important;
+}
+
+body>table:nth-child(4) {
+  display:none !important;
+}
+
+#footer {
+  border-top: none !important;
+}
+
+#copyright {
+  color: #666 !important;
+  text-shadow: 0px 1px #FFF !important;
+}
+
+h3.one,
+h3.two,
+h3.three,
+h3.four {
+  border: 1px solid #CCC !important;
+  border-radius: 4px !important;
+  background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(234,234,234) 4%, rgb(255,255,255) 100%) !important;
+  padding: 6px 10px !important;
+  font-size 16px !important;
+}
+
+h4.one,
+h4.two,
+h4.three,
+h4.four {
+  border: 1px solid #CCC !important;
+  border-radius: 4px !important;
+  background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(234,234,234) 4%, rgb(255,255,255) 100%) !important;
+  padding: 4px 6px !important;
+}
+
+
+img[src*="student_01.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/rishu.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student_01a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/rishu2.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student_02.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/plan.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student_02a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/plan2.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student1_03.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/mentor.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student1_03a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/mentor2.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student_04.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/project.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+img[src*="student_04a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/project2.png) no-repeat !important;
+  width: 30px !important;
+  padding-top:100px !important;
+  margin-top:3px !important;
+  height:0px !important;
+  overflow: hidden !important;
+}
+
+
+img[src*="spacer.gif"] {
+  display: none !important;  
+}
+
+tr[bgcolor="#cbd7e4"] {
+  background: none !important;
+}
+
+tr[bgcolor="#cbd7e4"] th {
+  box-shadow: 0px 1px 0px rgba(0,0,0,0.3) inset !important;
+  padding: 8px !important;
+  color: #FFF !important;
+  font-weight: normal !important;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4) !important;
+  border-radius: 4px !important;
+  background: #333 !important;
+}
+
+tr[bgcolor="#cbd7e4"] th:first-child {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+tr[bgcolor="#eeeeee"] th:first-child {
+  padding: 8px !important;
+  color: #FFF !important;
+  font-weight: normal !important;
+  text-shadow: 0px -1px 0px rgba(0,0,0,0.4) !important;
+  border-radius: 4px !important;
+  background: #999 !important;
+}
+
+tr[bgcolor="#eeeeee"]>td[bgcolor="#eeeeee"] {
+  border-radius: 4px !important;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
+/* Retina */
+body>table:nth-child(1) h1 a {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/logo@2x.png) no-repeat !important;
+  	background-size: 300px 80px !important;
+}
+
+body {
+  background: #F0F0F0 url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/nav@2x.png) repeat-x !important;
+  	background-size: 40px 150px !important;
+}
+  
+a[href*="logout.cgi"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/logout@2x.png) !important;
+  
+    	background-size: 68px 52px !important;
+}
+
+img[src*="student_01.gif"] {
+  background-image: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/rishu@2x.png) !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student_01a.gif"] {
+  background-image: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/rishu2@2x.png) !important;
+  background-size: 30px 100px !important;
+}
+  
+img[src*="student_02.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/plan@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student_02a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/plan2@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student1_03.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/mentor@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student1_03a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/mentor2@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student_04.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/project@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}
+
+img[src*="student_04a.gif"] {
+  background: url(http://web.sfc.keio.ac.jp/~t13256tk/sfs/project2@2x.png) no-repeat !important;
+  background-size: 30px 100px !important;
+}

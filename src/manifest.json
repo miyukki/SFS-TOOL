@@ -1,0 +1,46 @@
+{
+  "web_accessible_resources": ["sfs.css", "wellness.png"],
+  "update_url": "https://clients2.google.com/service/update2/crx",
+  "description": "SFC生必須のSFC-SFSを便利にするツールです",
+  "name": "SFS-TOOL",
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "64": "icon64.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vu8.sfc.keio.ac.jp/sfc-sfs/*",
+        "https://vu9.sfc.keio.ac.jp/sfc-sfs/*"
+      ],
+      "js": [
+        "jquery.js",
+        "custom.js"
+      ],
+      "css": ["custom.css"]
+    },
+    {
+      "matches": [
+        "https://wellness.sfc.keio.ac.jp/v3/*"
+      ],
+      "js": [
+        "jquery.js",
+        "wellness_custom.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "http://d.applest.net/wellness/*",
+    "https://wellness.sfc.keio.ac.jp/v3/*",
+    "alarms",
+    "notifications"
+  ],
+  "background": {
+    "scripts": ["jquery.js", "background.js"],
+    "persistent": false
+  },
+  "manifest_version": 2,
+  "version": "1.11"
+}

@@ -1,0 +1,47 @@
+.FT_customcss {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 12px;
+	padding: 8px;
+	border-left: solid 1px #aaa;
+	border-bottom: solid 1px #aaa;
+	border-bottom-left-radius: 5px;
+	background-color: #CBD7E4;
+	cursor: pointer;
+}
+
+.ST_title {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+}
+.ST_data {
+	margin: 0;
+	padding: 0;
+}
+.ST_plan_delete, .ST_plan_summary {
+	cursor: pointer;
+}
+
+.bbsContent {
+	margin-left: 10px;
+	max-height: 140px;
+	overflow-y: scroll;
+}
+
+.bbsDate {
+	margin-right: 10px;
+}
+
+.bbsName {
+	margin-right: 10px;
+	color: #008000;
+	font-weight: bold;
+}
+
+.bbsBody {
+	font-size: 14px;
+	margin: 0;
+	margin-bottom: 5px;
+}
