@@ -127,7 +127,7 @@ h3.four {
   border-radius: 4px !important;
   background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(234,234,234) 4%, rgb(255,255,255) 100%) !important;
   padding: 6px 10px !important;
-  font-size 16px !important;
+  font-size: 16px !important;
 }
 
 h4.one,
@@ -251,59 +251,60 @@ tr[bgcolor="#eeeeee"]>td[bgcolor="#eeeeee"] {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
-/* Retina */
-body>table:nth-child(1) h1 a {
-  background: url(./assets/logo@2x.png) no-repeat !important;
-  	background-size: 300px 80px !important;
-}
+  /* Retina */
+  body>table:nth-child(1) h1 a {
+    background: url(./assets/logo@2x.png) no-repeat !important;
+      background-size: 300px 80px !important;
+  }
 
-body {
-  background: #F0F0F0 url(./assets/nav@2x.png) repeat-x !important;
-  	background-size: 40px 150px !important;
-}
+  body {
+    background: #F0F0F0 url(./assets/nav@2x.png) repeat-x !important;
+      background-size: 40px 150px !important;
+  }
 
-a[href*="logout.cgi"] {
-  background: url(./assets/logout@2x.png) !important;
+  a[href*="logout.cgi"] {
+    background: url(./assets/logout@2x.png) !important;
 
-    	background-size: 68px 52px !important;
-}
+        background-size: 68px 52px !important;
+  }
 
-img[src*="student_01.gif"] {
-  background-image: url(./assets/rishu@2x.png) !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student_01.gif"] {
+    background-image: url(./assets/rishu@2x.png) !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student_01a.gif"] {
-  background-image: url(./assets/rishu2@2x.png) !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student_01a.gif"] {
+    background-image: url(./assets/rishu2@2x.png) !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student_02.gif"] {
-  background: url(./assets/plan@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student_02.gif"] {
+    background: url(./assets/plan@2x.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student_02a.gif"] {
-  background: url(./assets/plan2@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student_02a.gif"] {
+    background: url(./assets/plan2.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student1_03.gif"] {
-  background: url(./assets/mentor@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student1_03.gif"] {
+    background: url(./assets/mentor.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student1_03a.gif"] {
-  background: url(./assets/mentor2@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student1_03a.gif"] {
+    background: url(./assets/mentor2.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student_04.gif"] {
-  background: url(./assets/project@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
-}
+  img[src*="student_04.gif"] {
+    background: url(./assets/project.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 
-img[src*="student_04a.gif"] {
-  background: url(./assets/project2@2x.png) no-repeat !important;
-  background-size: 30px 100px !important;
+  img[src*="student_04a.gif"] {
+    background: url(./assets/project2.png) no-repeat !important;
+    background-size: 30px 100px !important;
+  }
 }
