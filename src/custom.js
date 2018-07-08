@@ -137,7 +137,12 @@ $(function() {
             for (var i = 0; i < classes.length; i++) {
                 class_urls.push($(classes[i]).attr("href"));
             }
-            class_urls = $.unique(class_urls);
+            class_urls = class_urls.reduce(function(previousValue, currentValue) {
+                if(previousValue.indexOf(currentValue) == -1) {
+                    return previousValue.concat([currentValue]);
+                }
+                return previousValue;
+            }, new Array());
 
             var remain = class_urls.length;
             for (var j = 0; j < class_urls.length; j++) {
