@@ -148,10 +148,13 @@ $(function() {
                         return function(data) {
                             lesson = new Lesson(url, data);
                             var hw = lesson.getHomework();
-                            if (hw && hw.length > 0) {
+                            var unsubmitted_hw = Array.from(hw).filter(function(h) {
+                                return $(h).text().indexOf("未提出") != -1;
+                            });
+                            if (unsubmitted_hw && unsubmitted_hw.length > 0) {
                                 noticeBox.append($("<p/>").addClass("ST_title").text(lesson.getTitle()));
-                                for (var i = 0; i < hw.length; i++) {
-                                    if ($(hw[i]).text().indexOf("未提出") != -1) noticeBox.append($(hw[i]).addClass("ST_data"));
+                                for (var i = 0; i < unsubmitted_hw.length; i++) {
+                                    noticeBox.append($(unsubmitted_hw[i]).addClass("ST_data"));
                                 }
                             }
                             // hw = hw[hw.length-1];
