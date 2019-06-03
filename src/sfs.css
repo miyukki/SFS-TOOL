@@ -34,7 +34,7 @@ body>table:nth-child(2) img {
 }
 
 
-body>table:nth-child(1) h1 a {
+body>table:nth-child(1) h1 {
   display: block !important;
   height: 90px !important;
   width: 300px !important;
@@ -43,7 +43,7 @@ body>table:nth-child(1) h1 a {
   background: url(./assets/logo.png) no-repeat !important;
 }
 
-h1 a img {
+h1 img {
   display: none !important;
 }
 
@@ -103,7 +103,6 @@ body>table:nth-child(3) tr[bgcolor="#c8c8ff"] td {
 
 table[width="850"] {
   width: 100% !important;
-  margin-top: 18px !important;
 }
 
 body>table:nth-child(4) {
@@ -252,7 +251,7 @@ tr[bgcolor="#eeeeee"]>td[bgcolor="#eeeeee"] {
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   /* Retina */
-  body>table:nth-child(1) h1 a {
+  body>table:nth-child(1) h1 {
     background: url(./assets/logo@2x.png) no-repeat !important;
       background-size: 300px 80px !important;
   }
