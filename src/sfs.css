@@ -73,7 +73,7 @@ a[href*="logout.cgi"] img {
   display:none !important;
 }
 
-body>table:nth-child(3) {
+body>table:nth-child(3):not(:last-of-type) {
   background: #FFF !important;
   border-radius: 4px !important;
   box-shadow: 0px 1px 6px rgba(0,0,0,0.3) !important;
