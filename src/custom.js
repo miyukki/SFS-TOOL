@@ -136,7 +136,9 @@ $(function() {
         var id = getParamString(QUERY, 'id');
         var term = getParamString(parseQueryString($('iframe').attr('src')), 'term');
         var content = "https://vu.sfc.keio.ac.jp/sfc-sfs/sfs_class/student/plan_timetable.cgi?" + mergeParamStrings([LANG, term, id]);
-        $(".noticeTitle").after($('<iframe width="100%" frameborder="0" height="800" scrolling="auto" marginwidth="0" marginheight="0" align="middle"/>').attr("src", content));
+        $.get(content, function (data) {
+            $('.noticeTitle').after($('<div/>').html(data))
+        });
         console.log(content);
     }
     var FC_Homework = function() {
