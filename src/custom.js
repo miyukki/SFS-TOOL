@@ -11,6 +11,29 @@ var setSaveData = function(data) {
 setInitSaveData({
     css: true
 });
+var filterFalsy = function (e) {
+    return e
+};
+var parseQueryString = function (url) {
+    return (url.split('?')[1] || '')
+        .split('&')
+        .filter(filterFalsy)
+        .map(function (param) {
+            return param.split('=').map(decodeURIComponent)
+        })
+        .reduce(function (a, param) {
+            k = param[0];
+            v = param[1];
+           	a[k] = a[k] ? [v].concat(a[k]) : v;
+            return a;
+        }, Object.setPrototypeOf({}, null));
+};
+var getParamString = function (query, param) {
+    return query[param] && param + '=' + query[param];
+};
+var mergeParamStrings = function (params) {
+    return '?' + params.join('&')
+};
 /** CSS適用 **/
 if (getSaveData()['css'] && location.pathname != "/sfc-sfs/index.cgi") {
     $("head").append($("<link/>").attr({
@@ -20,6 +43,7 @@ if (getSaveData()['css'] && location.pathname != "/sfc-sfs/index.cgi") {
     }));
 }
 $(function() {
+    var QUERY = parseQueryString(location.search);
     /** Lesson **/
     var Lesson = function(url, dirtyhtml) {
         var dom = $("<div/>").addClass("tmp" + Math.random()).css({
