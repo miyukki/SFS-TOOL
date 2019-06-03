@@ -44,6 +44,7 @@ if (getSaveData()['css'] && location.pathname != "/sfc-sfs/index.cgi") {
 }
 $(function() {
     var QUERY = parseQueryString(location.search);
+    var LANG = getParamString(QUERY, 'lang') || 'lang=ja';
     /** Lesson **/
     var Lesson = function(url, dirtyhtml) {
         var dom = $("<div/>").addClass("tmp" + Math.random()).css({
@@ -132,9 +133,9 @@ $(function() {
         return null;
     }
     var FC_EasyTimetable = function() {
-        var param_id = location.search.match("id=[a-z0-9]+")[0];
-        var param_term = $("[target=frame]").attr("href").match("term=[0-9]{4}.")[0];
-        var content = "https://vu.sfc.keio.ac.jp/sfc-sfs/sfs_class/student/plan_timetable.cgi?" + UT_getLang() + "&" + param_term + "&" + param_id;
+        var id = getParamString(QUERY, 'id');
+        var term = getParamString(parseQueryString($('iframe').attr('src')), 'term');
+        var content = "https://vu.sfc.keio.ac.jp/sfc-sfs/sfs_class/student/plan_timetable.cgi?" + mergeParamStrings([LANG, term, id]);
         $(".noticeTitle").after($('<iframe width="100%" frameborder="0" height="800" scrolling="auto" marginwidth="0" marginheight="0" align="middle"/>').attr("src", content));
         console.log(content);
     }
