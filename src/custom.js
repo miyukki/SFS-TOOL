@@ -286,7 +286,7 @@ $(function() {
 
     /** 掲示板機能 **/
     if (location.pathname == "/sfc-sfs/sfs_class/student/s_class_top.cgi") {
-        var yc = location.href.match("yc=[2014]{4}_[0-9]+")[0];
+        var yc = getParamString(QUERY, 'yc');
         var bbsContent = $('<tr><td valign="top" align="right" bgcolor="#cbd7e4"><font color="#000000"><b>匿名掲示板<br>βテスト</b></font><span class="en"><br>Notice</span></td><td bgcolor="#cbd7e4" width="100%"><div class="bbs_area"></div><br></td></tr>');
         var hrBar = $('<tr> <th align="right"><hr noshade=""></th><td><hr noshade=""></td></tr>');
         $("b:contains(お知らせ)").parent().parent().parent().before(bbsContent);
